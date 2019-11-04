@@ -64,9 +64,11 @@ bool FC::removeFilm(const string fTitle, const string fDirector){
             Film* delFilm = new Film("","",0,0);
             films[i] = *delFilm;
             Film* tempFilms = new Film[noOfFilms - 1];
+            unsigned int j = 0;
             for(unsigned int i = 0; i < noOfFilms; i++){
                 if (films[i].getTitle() != "" || films[i].getDirector() != ""){
-                    tempFilms[i] = films[i];
+                    tempFilms[j] = films[i];
+                    j++;
                 }
             }
             noOfFilms--;

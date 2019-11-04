@@ -22,6 +22,7 @@ int main(){
     fc.addFilm("Good Will Hunting", "Gus Van Sant", 1997, 126);
     fc.addFilm("Requiem for a Dream", "Darren Aronofsky", 2000, 101);
     fc.removeFilm("Requiem for a Dream", "Darren Aronofsky");
+    fc.removeFilm("Full Metal Jacket", "Stanley Kubrick");
     fc.addFilm("The Diving Bell and the Butterfly", "Julian Schnabel",2007, 112);
     if (fc.removeFilm("Zelig", "Woody Allen"))
         cout << "Successful deletion of Zelig, Woody Allen" << endl;
